@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dress Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('logindress.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .form {
+            text-align: center;
+            width: 300px;
+            padding: 30px;
+            border: 1px solid #080808;
+            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 230, 250, 0.9)); /* Gradient background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form h1 {
+            margin-bottom: 20px;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #523bff, #84a7fa); /* Gradient text background */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .inp {
+            margin-bottom: 20px;
+        }
+
+        .inp input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #141414;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for inputs */
+        }
+
+        .inp input:focus {
+            border-color: #f87bdd;
+            box-shadow: 0 0 5px rgba(255, 154, 158, 0.5);
+            outline: none;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        .btn button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #127009, #7ff893); /* Gradient button background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn button:hover {
+            background: linear-gradient(135deg, #0c6a7a, #23c5ee); /* Gradient hover effect */
+        }
+
+        .btn button:active {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient active effect */
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form">
+                <h1>SIGN UP</h1>
+                <div class="inp">
+                    <input type="text" placeholder="UserName" required>
+                </div>
+                <div class="inp">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="inp">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="btn">
+                    <button type="submit"><a href="dress.html">Submit</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
